@@ -5,7 +5,7 @@ class MP3Importer
     @path = file_path
   end
 
-  def files 
+  def files
     @files = Dir["./spec/fixtures/mp3s/*"].map { |file| file.split("/").last }
   end
 
